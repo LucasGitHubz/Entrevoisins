@@ -17,7 +17,7 @@ import java.lang.Override;
 public class ListNeighbourActivity_ViewBinding implements Unbinder {
   private ListNeighbourActivity target;
 
-  private View view7f08001d;
+  private View view7f08001e;
 
   @UiThread
   public ListNeighbourActivity_ViewBinding(ListNeighbourActivity target) {
@@ -33,7 +33,7 @@ public class ListNeighbourActivity_ViewBinding implements Unbinder {
     target.mToolbar = Utils.findRequiredViewAsType(source, R.id.toolbar, "field 'mToolbar'", Toolbar.class);
     target.mViewPager = Utils.findRequiredViewAsType(source, R.id.container, "field 'mViewPager'", ViewPager.class);
     view = Utils.findRequiredView(source, R.id.add_neighbour, "method 'addNeighbour'");
-    view7f08001d = view;
+    view7f08001e = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class ListNeighbourActivity_ViewBinding implements Unbinder {
     target.mToolbar = null;
     target.mViewPager = null;
 
-    view7f08001d.setOnClickListener(null);
-    view7f08001d = null;
+    view7f08001e.setOnClickListener(null);
+    view7f08001e = null;
   }
 }

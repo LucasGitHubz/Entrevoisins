@@ -17,7 +17,7 @@ import java.lang.Override;
 public class AddNeighbourActivity_ViewBinding implements Unbinder {
   private AddNeighbourActivity target;
 
-  private View view7f08003b;
+  private View view7f08003e;
 
   @UiThread
   public AddNeighbourActivity_ViewBinding(AddNeighbourActivity target) {
@@ -36,7 +36,7 @@ public class AddNeighbourActivity_ViewBinding implements Unbinder {
     target.aboutMeInput = Utils.findRequiredViewAsType(source, R.id.aboutMeLyt, "field 'aboutMeInput'", TextInputLayout.class);
     view = Utils.findRequiredView(source, R.id.create, "field 'addButton' and method 'addNeighbour'");
     target.addButton = Utils.castView(view, R.id.create, "field 'addButton'", MaterialButton.class);
-    view7f08003b = view;
+    view7f08003e = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class AddNeighbourActivity_ViewBinding implements Unbinder {
     target.aboutMeInput = null;
     target.addButton = null;
 
-    view7f08003b.setOnClickListener(null);
-    view7f08003b = null;
+    view7f08003e.setOnClickListener(null);
+    view7f08003e = null;
   }
 }

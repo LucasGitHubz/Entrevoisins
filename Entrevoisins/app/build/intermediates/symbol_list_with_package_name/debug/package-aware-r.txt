@@ -1045,6 +1045,7 @@ id SHIFT
 id SYM
 id aboutMe
 id aboutMeLyt
+id about_layout
 id action0
 id action_bar
 id action_bar_activity_content
@@ -1076,8 +1077,10 @@ id appbar
 id async
 id auto
 id avatar
+id back_button
 id barrier
 id beginning
+id big_name_textField
 id blocking
 id bottom
 id buttonPanel
@@ -1160,6 +1163,7 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id name
 id nameLyt
+id name_textView
 id navigation_header_container
 id never
 id none
@@ -1177,6 +1181,11 @@ id percent
 id phoneNumber
 id phoneNumberLyt
 id pin
+id profil_imageView
+id profil_informations_layout
+id profil_location
+id profil_network
+id profil_number
 id progress_circular
 id progress_horizontal
 id radio
@@ -1333,6 +1342,7 @@ layout fragment_neighbour
 layout fragment_neighbour_list
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
+layout neighbour_details
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
