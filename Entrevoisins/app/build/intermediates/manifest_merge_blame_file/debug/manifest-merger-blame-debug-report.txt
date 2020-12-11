@@ -15,7 +15,7 @@
 11-->/Users/kuroro/Desktop/Entrevoisins/Entrevoisins/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/Users/kuroro/Desktop/Entrevoisins/Entrevoisins/app/src/main/AndroidManifest.xml:7:5-28:19
+13-->/Users/kuroro/Desktop/Entrevoisins/Entrevoisins/app/src/main/AndroidManifest.xml:7:5-31:19
 14        android:allowBackup="true"
 14-->/Users/kuroro/Desktop/Entrevoisins/Entrevoisins/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
@@ -59,6 +59,12 @@
 34-->/Users/kuroro/Desktop/Entrevoisins/Entrevoisins/app/src/main/AndroidManifest.xml:25:27-74
 35            </intent-filter>
 36        </activity>
-37    </application>
-38
-39</manifest>
+37        <activity
+37-->/Users/kuroro/Desktop/Entrevoisins/Entrevoisins/app/src/main/AndroidManifest.xml:28:9-30:48
+38            android:name="com.openclassrooms.entrevoisins.ui.neighbour_list.NeighbourDetailsActivity"
+38-->/Users/kuroro/Desktop/Entrevoisins/Entrevoisins/app/src/main/AndroidManifest.xml:29:13-71
+39            android:label="NeighbourDetails" />
+39-->/Users/kuroro/Desktop/Entrevoisins/Entrevoisins/app/src/main/AndroidManifest.xml:30:13-45
+40    </application>
+41
+42</manifest>

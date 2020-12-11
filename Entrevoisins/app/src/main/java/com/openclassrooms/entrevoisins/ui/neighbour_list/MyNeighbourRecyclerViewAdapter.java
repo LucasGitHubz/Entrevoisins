@@ -1,6 +1,8 @@
 package com.openclassrooms.entrevoisins.ui.neighbour_list;
 
 import android.content.Intent;
+import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
@@ -27,6 +29,7 @@ import butterknife.ButterKnife;
 public class MyNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeighbourRecyclerViewAdapter.ViewHolder> {
 
     private final List<Neighbour> mNeighbours;
+    public static final String BUNDLE_EXTRA_NEIGHBOUR = "BUNDLE_EXTRA_NEIGHBOUR";
 
     public MyNeighbourRecyclerViewAdapter(List<Neighbour> items) {
         mNeighbours = items;
@@ -51,7 +54,11 @@ public class MyNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeigh
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View itemView) {
-                itemView.getContext().startActivity(new Intent(itemView.getContext(), AddNeighbourActivity.class));
+                Intent intent = new Intent(holder.itemView.getContext(), NeighbourDetailsActivity.class);
+                Bundle bNeighbour = new Bundle();
+                bNeighbour.putParcelable("neighbour", neighbour);
+                intent.putExtras(bNeighbour);
+                itemView.getContext().startActivity(intent);
             }
         });
 

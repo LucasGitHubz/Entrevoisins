@@ -1104,6 +1104,7 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1124,6 +1125,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id first_card_view
 id fixed
 id forever
 id ghost_view

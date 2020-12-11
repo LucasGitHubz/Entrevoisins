@@ -20,6 +20,7 @@ com/openclassrooms/entrevoisins/ui/neighbour_list/MyNeighbourRecyclerViewAdapter
  com.openclassrooms.entrevoisins.ui.neighbour_list.MyNeighbourRecyclerViewAdapter$ViewHolder
 com/openclassrooms/entrevoisins/model/Neighbour.java
  com.openclassrooms.entrevoisins.model.Neighbour
+ com.openclassrooms.entrevoisins.model.Neighbour$1
 com/openclassrooms/entrevoisins/events/DeleteNeighbourEvent.java
  com.openclassrooms.entrevoisins.events.DeleteNeighbourEvent
 com/openclassrooms/entrevoisins/service/DummyNeighbourGenerator.java

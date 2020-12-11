@@ -34,6 +34,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.openclassrooms.entrevoisins.ui.neighbour_list.NeighbourDetailsActivity"
+            android:label="NeighbourDetails" />
     </application>
 
 </manifest>
