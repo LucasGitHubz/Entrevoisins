@@ -7,12 +7,11 @@ com/openclassrooms/entrevoisins/ui/neighbour_list/AddNeighbourActivity.java
  com.openclassrooms.entrevoisins.ui.neighbour_list.AddNeighbourActivity$1
 com/openclassrooms/entrevoisins/service/DummyNeighbourApiService.java
  com.openclassrooms.entrevoisins.service.DummyNeighbourApiService
-com/openclassrooms/entrevoisins/Common.java
- com.openclassrooms.entrevoisins.Common
 com/openclassrooms/entrevoisins/BuildConfig.java
  com.openclassrooms.entrevoisins.BuildConfig
 com/openclassrooms/entrevoisins/ui/neighbour_list/NeighbourDetailsActivity.java
  com.openclassrooms.entrevoisins.ui.neighbour_list.NeighbourDetailsActivity
+ com.openclassrooms.entrevoisins.ui.neighbour_list.NeighbourDetailsActivity$1
 com/openclassrooms/entrevoisins/ui/neighbour_list/MyNeighbourRecyclerViewAdapter.java
  com.openclassrooms.entrevoisins.ui.neighbour_list.MyNeighbourRecyclerViewAdapter
  com.openclassrooms.entrevoisins.ui.neighbour_list.MyNeighbourRecyclerViewAdapter$1

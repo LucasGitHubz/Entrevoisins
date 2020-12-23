@@ -33,6 +33,7 @@ public class NeighbourDetailsActivity_ViewBinding implements Unbinder {
     target.number = Utils.findRequiredViewAsType(source, R.id.profil_number, "field 'number'", TextView.class);
     target.network = Utils.findRequiredViewAsType(source, R.id.profil_network, "field 'network'", TextView.class);
     target.description = Utils.findRequiredViewAsType(source, R.id.description, "field 'description'", TextView.class);
+    target.favoriteButton = Utils.findRequiredViewAsType(source, R.id.favoriteBtn, "field 'favoriteButton'", ImageView.class);
   }
 
   @Override
@@ -50,5 +51,6 @@ public class NeighbourDetailsActivity_ViewBinding implements Unbinder {
     target.number = null;
     target.network = null;
     target.description = null;
+    target.favoriteButton = null;
   }
 }

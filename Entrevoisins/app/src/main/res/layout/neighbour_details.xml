@@ -186,6 +186,16 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/favoriteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star_border_white_24dp"
+        android:tint="#FFDD00"
+        app:backgroundTint="#FFFFFF"
+        app:borderWidth="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/big_name_textField"
+        app:rippleColor="@color/colorAccent" />
 
 </android.support.constraint.ConstraintLayout>

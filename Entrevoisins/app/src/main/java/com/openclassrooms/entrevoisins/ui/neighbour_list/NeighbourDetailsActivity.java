@@ -9,7 +9,9 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -44,6 +46,10 @@ public class NeighbourDetailsActivity extends AppCompatActivity {
     TextView network;
     @BindView(R.id.description)
     TextView description;
+    @BindView(R.id.favoriteBtn)
+    ImageView favoriteButton;
+
+    private NeighbourApiService mApiService = DI.getNeighbourApiService();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +62,7 @@ public class NeighbourDetailsActivity extends AppCompatActivity {
     }
 
     private void init(Neighbour neighbour) {
+        setStarImage(neighbour.isFavorite);
         Glide.with(profilImage.getContext())
                 .load(neighbour.getAvatarUrl())
                 .into(profilImage);
@@ -64,5 +71,21 @@ public class NeighbourDetailsActivity extends AppCompatActivity {
         location.setText(neighbour.getAddress());
         number.setText(neighbour.getPhoneNumber());
         description.setText(neighbour.getAboutMe());
+
+        favoriteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                neighbour.isFavorite = mApiService.toogleFavorite(neighbour);
+                setStarImage(neighbour.isFavorite);
+            }
+        });
+    }
+
+    private void setStarImage(Boolean favorite) {
+        if (favorite) {
+            favoriteButton.setImageResource(R.drawable.ic_star_white_24dp);
+        } else {
+            favoriteButton.setImageResource(R.drawable.ic_star_border_white_24dp);
+        }
     }
 }

@@ -28,7 +28,7 @@ public class Neighbour implements Parcelable {
     /** About me */
     private String aboutMe;
 
-    private Boolean isFavorite = false;
+    public Boolean isFavorite = false;
 
     /**
      * Constructor
