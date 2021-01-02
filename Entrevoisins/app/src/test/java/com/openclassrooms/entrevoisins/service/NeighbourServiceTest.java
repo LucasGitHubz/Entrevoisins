@@ -35,6 +35,12 @@ public class NeighbourServiceTest {
     }
 
     @Test
+    public void addFavoriteNeighbourWithSuccess() {
+        List<Neighbour> favoriteNeighbours = service.getFavoriteList();
+        
+    }
+
+    @Test
     public void deleteNeighbourWithSuccess() {
         Neighbour neighbourToDelete = service.getNeighbours().get(0);
         service.deleteNeighbour(neighbourToDelete);

@@ -4,6 +4,8 @@ import android.util.Log;
 
 import com.openclassrooms.entrevoisins.model.Neighbour;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -41,7 +43,7 @@ public class DummyNeighbourApiService implements  NeighbourApiService {
 
     @Override
     public List<Neighbour> getFavoriteList() {
-        List<Neighbour> favoriteList = null;
+        List<Neighbour> favoriteList = new ArrayList<>();
         for (Neighbour neighbour: neighbours) {
             if (neighbour.isFavorite) {
                 favoriteList.add(neighbour);
@@ -51,14 +53,13 @@ public class DummyNeighbourApiService implements  NeighbourApiService {
     }
 
     @Override
-    public Boolean toogleFavorite(Neighbour neighbour) {
+    public void toogleFavorite(Neighbour neighbour) {
         for (Neighbour neighbour1: neighbours) {
             if (neighbour1.getId() == neighbour.getId()) {
                 neighbour1.isFavorite = !neighbour.isFavorite;
-                neighbour = neighbour1;
+                neighbour.isFavorite = neighbour1.isFavorite;
                 break;
             }
         }
-        return neighbour.isFavorite;
     }
 }

@@ -27,14 +27,20 @@ public class NeighbourFragment extends Fragment {
     private NeighbourApiService mApiService;
     private List<Neighbour> mNeighbours;
     private RecyclerView mRecyclerView;
-
+    private Integer typeList;
 
     /**
      * Create and return a new instance
      * @return @{@link NeighbourFragment}
      */
-    public static NeighbourFragment newInstance() {
+    public static NeighbourFragment newInstance(Integer position) {
         NeighbourFragment fragment = new NeighbourFragment();
+        Bundle bundle = new Bundle();
+
+        bundle.putInt("typeList", position);
+
+        fragment.setArguments(bundle);
+
         return fragment;
     }
 
@@ -42,6 +48,7 @@ public class NeighbourFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mApiService = DI.getNeighbourApiService();
+        typeList = getArguments().getInt("typeList");
     }
 
     @Override
@@ -52,6 +59,8 @@ public class NeighbourFragment extends Fragment {
         mRecyclerView = (RecyclerView) view;
         mRecyclerView.setLayoutManager(new LinearLayoutManager(context));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
+        initList();
+
         return view;
     }
 
@@ -59,7 +68,12 @@ public class NeighbourFragment extends Fragment {
      * Init the List of neighbours
      */
     private void initList() {
-        mNeighbours = mApiService.getNeighbours();
+       if (typeList == 1) {
+            mNeighbours = mApiService.getFavoriteList();
+        } else {
+            mNeighbours = mApiService.getNeighbours();
+        }
+
         mRecyclerView.setAdapter(new MyNeighbourRecyclerViewAdapter(mNeighbours));
     }
 

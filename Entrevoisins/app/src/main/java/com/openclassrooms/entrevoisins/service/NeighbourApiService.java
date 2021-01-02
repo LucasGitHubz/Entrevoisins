@@ -30,5 +30,5 @@ public interface NeighbourApiService {
 
     List<Neighbour> getFavoriteList();
 
-    Boolean toogleFavorite(Neighbour neighbour);
+    void toogleFavorite(Neighbour neighbour);
 }

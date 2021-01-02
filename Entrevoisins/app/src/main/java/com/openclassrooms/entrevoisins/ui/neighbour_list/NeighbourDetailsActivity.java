@@ -51,18 +51,19 @@ public class NeighbourDetailsActivity extends AppCompatActivity {
 
     private NeighbourApiService mApiService = DI.getNeighbourApiService();
 
+    private Neighbour neighbour;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
-        Neighbour neighbour = intent.getParcelableExtra("neighbour");
+        neighbour = intent.getParcelableExtra("neighbour");
         setContentView(R.layout.neighbour_details);
         ButterKnife.bind(this);
-        init(neighbour);
+        init();
     }
 
-    private void init(Neighbour neighbour) {
-        setStarImage(neighbour.isFavorite);
+    private void init() {
+        setStarImage();
         Glide.with(profilImage.getContext())
                 .load(neighbour.getAvatarUrl())
                 .into(profilImage);
@@ -75,14 +76,14 @@ public class NeighbourDetailsActivity extends AppCompatActivity {
         favoriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                neighbour.isFavorite = mApiService.toogleFavorite(neighbour);
-                setStarImage(neighbour.isFavorite);
+                mApiService.toogleFavorite(neighbour);
+                setStarImage();
             }
         });
     }
 
-    private void setStarImage(Boolean favorite) {
-        if (favorite) {
+    private void setStarImage() {
+        if (neighbour.isFavorite) {
             favoriteButton.setImageResource(R.drawable.ic_star_white_24dp);
         } else {
             favoriteButton.setImageResource(R.drawable.ic_star_border_white_24dp);
