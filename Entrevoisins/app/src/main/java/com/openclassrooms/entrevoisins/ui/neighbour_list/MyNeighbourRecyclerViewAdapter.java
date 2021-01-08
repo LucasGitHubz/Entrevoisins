@@ -16,7 +16,9 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.openclassrooms.entrevoisins.R;
+import com.openclassrooms.entrevoisins.di.DI;
 import com.openclassrooms.entrevoisins.events.DeleteNeighbourEvent;
+import com.openclassrooms.entrevoisins.events.RemoveNeighbourFromFavorite;
 import com.openclassrooms.entrevoisins.model.Neighbour;
 
 import org.greenrobot.eventbus.EventBus;
@@ -29,10 +31,12 @@ import butterknife.ButterKnife;
 public class MyNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeighbourRecyclerViewAdapter.ViewHolder> {
 
     private final List<Neighbour> mNeighbours;
+    private final Integer mPosition;
     public static final String BUNDLE_EXTRA_NEIGHBOUR = "BUNDLE_EXTRA_NEIGHBOUR";
 
-    public MyNeighbourRecyclerViewAdapter(List<Neighbour> items) {
+    public MyNeighbourRecyclerViewAdapter(List<Neighbour> items, Integer position) {
         mNeighbours = items;
+        mPosition = position;
     }
 
     @Override
@@ -65,7 +69,12 @@ public class MyNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeigh
         holder.mDeleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EventBus.getDefault().post(new DeleteNeighbourEvent(neighbour));
+                if (mPosition == 1) {
+                    DI.getNeighbourApiService().toogleFavorite(neighbour);
+                    EventBus.getDefault().post(new RemoveNeighbourFromFavorite(neighbour));
+                } else {
+                    EventBus.getDefault().post(new DeleteNeighbourEvent(neighbour));
+                }
             }
         });
     }

@@ -1,3 +1,5 @@
+com/openclassrooms/entrevoisins/events/RemoveNeighbourFromFavorite.java
+ com.openclassrooms.entrevoisins.events.RemoveNeighbourFromFavorite
 com/openclassrooms/entrevoisins/ui/neighbour_list/ListNeighbourActivity.java
  com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity
 com/openclassrooms/entrevoisins/ui/neighbour_list/NeighbourFragment.java

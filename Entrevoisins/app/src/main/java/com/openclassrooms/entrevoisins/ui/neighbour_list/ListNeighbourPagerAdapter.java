@@ -39,7 +39,7 @@ public class ListNeighbourPagerAdapter extends FragmentPagerAdapter {
             }
         };
 
-        NeighbourFragment fragment = NeighbourFragment.newInstance(neighbours);
+        NeighbourFragment fragment = NeighbourFragment.newInstance(neighbours, position);
         
         return fragment;
     }

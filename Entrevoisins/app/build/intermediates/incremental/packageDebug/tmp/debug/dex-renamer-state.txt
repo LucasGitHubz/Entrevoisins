@@ -1,4 +1,4 @@
-#Fri Jan 08 13:17:03 CET 2021
+#Fri Jan 08 14:18:10 CET 2021
 base.0=/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
