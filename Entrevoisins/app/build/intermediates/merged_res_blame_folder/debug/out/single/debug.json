@@ -16,24 +16,24 @@
         "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
-    },
-    {
         "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/layout_fragment_list_neighbour.xml.flat",
-        "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/layout/fragment_list_neighbour.xml"
-    },
-    {
         "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/layout_fragment_list_neighbour.xml.flat",
+        "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/layout/fragment_list_neighbour.xml"
     },
     {
         "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
@@ -68,6 +68,10 @@
         "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/drawable/ic_person_add_white_24dp.xml"
     },
     {
+        "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/drawable_pink_language.xml.flat",
+        "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/drawable/pink_language.xml"
+    },
+    {
         "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/drawable_ic_star_border_white_24dp.xml.flat",
         "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/drawable/ic_star_border_white_24dp.xml"
     },
@@ -78,6 +82,10 @@
     {
         "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/drawable_pink_mobile.xml.flat",
+        "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/drawable/pink_mobile.xml"
     },
     {
         "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/layout_fragment_neighbour_list.xml.flat",
@@ -118,6 +126,10 @@
     {
         "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/drawable_ic_delete_white_24dp.xml.flat",
         "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/drawable/ic_delete_white_24dp.xml"
+    },
+    {
+        "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/drawable_pink_location.xml.flat",
+        "source": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/src/main/res/drawable/pink_location.xml"
     },
     {
         "merged": "/Users/lucas/Desktop/Entrevoisins/Entrevoisins/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",

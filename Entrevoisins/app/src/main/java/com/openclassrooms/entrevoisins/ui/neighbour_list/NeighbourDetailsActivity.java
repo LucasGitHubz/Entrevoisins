@@ -63,6 +63,12 @@ public class NeighbourDetailsActivity extends AppCompatActivity {
     }
 
     private void init() {
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         setStarImage();
         Glide.with(profilImage.getContext())
                 .load(neighbour.getAvatarUrl())

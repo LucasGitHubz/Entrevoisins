@@ -13,6 +13,7 @@ com/openclassrooms/entrevoisins/BuildConfig.java
 com/openclassrooms/entrevoisins/ui/neighbour_list/NeighbourDetailsActivity.java
  com.openclassrooms.entrevoisins.ui.neighbour_list.NeighbourDetailsActivity
  com.openclassrooms.entrevoisins.ui.neighbour_list.NeighbourDetailsActivity$1
+ com.openclassrooms.entrevoisins.ui.neighbour_list.NeighbourDetailsActivity$2
 com/openclassrooms/entrevoisins/ui/neighbour_list/MyNeighbourRecyclerViewAdapter.java
  com.openclassrooms.entrevoisins.ui.neighbour_list.MyNeighbourRecyclerViewAdapter
  com.openclassrooms.entrevoisins.ui.neighbour_list.MyNeighbourRecyclerViewAdapter$1

@@ -1035,6 +1035,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pink_language
+drawable pink_location
+drawable pink_mobile
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
