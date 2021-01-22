@@ -53,6 +53,8 @@ public class NeighboursListTest {
 
     private ListNeighbourActivity mActivity;
 
+    private ViewInteraction viewInteraction;
+
     @Rule
     public ActivityTestRule<ListNeighbourActivity> mActivityRule =
             new ActivityTestRule(ListNeighbourActivity.class);
@@ -61,6 +63,7 @@ public class NeighboursListTest {
     public void setUp() {
         mActivity = mActivityRule.getActivity();
         assertThat(mActivity, notNullValue());
+        viewInteraction = onView(allOf(withId(R.id.list_neighbours), isDisplayed()));
     }
 
     /**
@@ -69,8 +72,8 @@ public class NeighboursListTest {
     @Test
     public void myNeighboursList_shouldNotBeEmpty() {
         // First scroll to the position that needs to be matched and click on it.
-        onView(ViewMatchers.withId(R.id.list_neighbours))
-                .check(matches(hasMinimumChildCount(1)));
+        viewInteraction.check(matches(hasMinimumChildCount(1)));
+
     }
 
     /**
@@ -79,19 +82,16 @@ public class NeighboursListTest {
     @Test
     public void myNeighboursList_deleteAction_shouldRemoveItem() {
         // Given : We remove the element at position 2
-        onView(ViewMatchers.withId(R.id.list_neighbours)).check(withItemCount(ITEMS_COUNT));
+        viewInteraction.check(withItemCount(ITEMS_COUNT));
         // When perform a click on a delete icon
-        onView(ViewMatchers.withId(R.id.list_neighbours))
-                .perform(RecyclerViewActions.actionOnItemAtPosition(1, new DeleteViewAction()));
+        viewInteraction.perform(RecyclerViewActions.actionOnItemAtPosition(1, new DeleteViewAction()));
         // Then : the number of element is 11
-        onView(ViewMatchers.withId(R.id.list_neighbours)).check(withItemCount(ITEMS_COUNT-1));
+        viewInteraction.check(withItemCount(ITEMS_COUNT-1));
     }
 
     @Test
     public void neighbourDetailsActivity_selectANeighbour_shouldDisplayHisInformation() {
-        ViewInteraction recyclerView = onView(
-                allOf(withId(R.id.list_neighbours),
-                        withParent(withId(R.id.container))));
+        ViewInteraction recyclerView = onView(allOf(withId(R.id.list_neighbours), isDisplayed(), withParent(withId(R.id.container))));
         recyclerView.perform(actionOnItemAtPosition(0, click()));
 
         ViewInteraction textView = onView(
@@ -142,7 +142,7 @@ public class NeighboursListTest {
     @Test
     public void favoriteList_whenFavoriteBTNIsTapped_shouldDisplayFavoriteNeighbours() {
         ViewInteraction recyclerView = onView(
-                allOf(withId(R.id.list_neighbours),
+                allOf(withId(R.id.list_neighbours), isDisplayed(),
                         withParent(withId(R.id.container))));
         recyclerView.perform(actionOnItemAtPosition(0, click()));
 
